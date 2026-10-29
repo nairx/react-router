@@ -6,6 +6,7 @@ import About from "./About";
 import RootLayout from "./RootLayout";
 import AdminLayout from "./AdminLayout";
 import Users from "./Users";
+import Products from "./Products";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
         path: "admin",
         element: <AdminLayout />,
         children: [{ index: true, element: <Users /> }],
+         children: [{ path: "products", element: <Products /> }],
       },
     ],
   },
