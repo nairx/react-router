@@ -4,6 +4,8 @@ import Contact from "./Contact";
 import Services from "./Services";
 import About from "./About";
 import RootLayout from "./RootLayout";
+import AdminLayout from "./AdminLayout";
+import Users from "./Users";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +16,11 @@ const router = createBrowserRouter([
       { path: "services", element: <Services /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
+      {
+        path: "admin",
+        element: <AdminLayout />,
+        children: [{ index: true, element: <Users /> }],
+      },
     ],
   },
 ]);

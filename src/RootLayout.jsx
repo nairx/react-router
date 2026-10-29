@@ -4,8 +4,9 @@ export default function RootLayout() {
   return (
     <div>
       <h1 style={{ backgroundColor: "orange" }}>My Application</h1>
-      <Link to="/">Home</Link> | 
-      <Link to="services">Services</Link>
+      <Link to="/">Home</Link> |<Link to="services">Services</Link> |
+      <Link to="about">About</Link> |<Link to="contact">Contact</Link> |
+      <Link to="admin">Admin</Link>
       <hr />
       <Outlet />
       <h3 style={{ backgroundColor: "silver" }}>
