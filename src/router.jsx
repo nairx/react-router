@@ -20,8 +20,10 @@ const router = createBrowserRouter([
       {
         path: "admin",
         element: <AdminLayout />,
-        children: [{ index: true, element: <Users /> }],
-         children: [{ path: "products", element: <Products /> }],
+        children: [
+          { index: true, element: <Users /> },
+          { path: "products", element: <Products /> },
+        ],
       },
     ],
   },
