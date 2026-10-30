@@ -5,6 +5,7 @@ export default function ProductDetails() {
   const [product, setProduct] = useState({});
   const [seachParams] = useSearchParams();
   const showProduct = () => {
+    console.log(tempid)
     const id = seachParams.get("id");
     const price = seachParams.get("price");
     setProduct(
