@@ -10,13 +10,13 @@ export default function Home() {
       <p>Hello {user.name}</p>
 
       <div>
-        <Link to="/product-details?id=1">Product-1</Link>
+        <Link to="/product-details?id=1&price=100">Product-1</Link>
       </div>
        <div>
-        <Link to="/product-details?id=2">Product-2</Link>
+        <Link to="/product-details?id=2&price=100">Product-2</Link>
       </div>
        <div>
-        <Link to="/product-details?id=3">Product-3</Link>
+        <Link to="/product-details?id=3&price=100">Product-3</Link>
       </div>
     </div>
   );
