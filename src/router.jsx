@@ -7,6 +7,7 @@ import RootLayout from "./RootLayout";
 import AdminLayout from "./AdminLayout";
 import Users from "./Users";
 import Products from "./Products";
+import ProductDetails from "./ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
       { path: "services", element: <Services /> },
       { path: "about", element: <About /> },
       { path: "contact", element: <Contact /> },
+      { path: "product-details/:id", element: <ProductDetails /> },
       {
         path: "admin",
         element: <AdminLayout />,
